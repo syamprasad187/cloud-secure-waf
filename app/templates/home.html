@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Cloud-Based Secure Web Application Firewall</h1>
+        <div class="content">
+            <p>Welcome to my project, a Cloud-Based Secure Web Application Firewall (WAF) built using AWS and Flask. This application is designed to protect web applications from malicious requests by leveraging machine learning and cloud infrastructure.</p>
+            <h2>Project Overview</h2>
+            <p>This WAF integrates a Flask web app with pages for home, registration, login, and about, hosted on AWS Elastic Beanstalk. It uses a Random Forest machine learning model to detect and block malicious HTTP requests, such as SQL injections or suspicious patterns, ensuring secure access for legitimate users.</p>
+            <h2>Key Features</h2>
+            <p>- <strong>Malicious Request Detection:</strong> Identifies threats using ML based on request features like path length, headers, and body content.<br>
+               - <strong>IP Blocking:</strong> Temporarily blocks IPs sending malicious requests.<br>
+               - <strong>AWS Free Tier:</strong> Deployed entirely within AWS Free Tier limits to avoid costs.<br>
+               - <strong>Modern UI:</strong> Responsive design with a consistent navbar and card-based forms.</p>
+            <h2>How It Works</h2>
+            <p>When a request is made, the WAF middleware analyzes it. If deemed safe, the user accesses the page; if malicious, the request is blocked, and the IP is added to a block list. This ensures real-time protection without compromising performance.</p>
+        </div>
+    </div>
+</body>
+</html>

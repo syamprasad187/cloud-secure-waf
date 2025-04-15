@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>About</h1>
+        <div class="content">
+            <p>This is a secure web application built as part of my project, "Cloud-Based Secure Web Application Firewall." It demonstrates how to protect web apps using AWS and machine learning.</p>
+        </div>
+    </div>
+</body>
+</html>
