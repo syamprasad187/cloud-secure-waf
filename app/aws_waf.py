@@ -1,4 +1,4 @@
-import boto3 # type: ignore
+import boto3
 from app import app
 
 waf_client = boto3.client('waf-regional', region_name=app.config['AWS_REGION'])
@@ -10,7 +10,7 @@ def create_waf_rule():
         ChangeToken=waf_client.get_change_token()['ChangeToken'],
         Predicates=[
             {
-                'DataId': 'IPSet-ID',  # Replace with your actual IPSet ID
+                'DataId': 'IPSet-ID',
                 'Negated': False,
                 'Type': 'IPMatch'
             }

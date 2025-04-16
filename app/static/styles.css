@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* CSS Variables */
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
@@ -18,14 +16,12 @@
     --navbar-text: #fff;
 }
 
-/* Body styling */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Navbar styling */
 .navbar {
     background-color: var(--navbar-bg);
     padding: 15px 20px;
@@ -55,14 +51,12 @@ body {
     color: #fff;
 }
 
-/* Container */
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Headings */
 h1 {
     color: var(--primary-color);
     text-align: center;
@@ -70,7 +64,6 @@ h1 {
     font-size: 2rem;
 }
 
-/* Card styling for forms */
 .card {
     background: #fff;
     border-radius: 8px;
@@ -80,7 +73,6 @@ h1 {
     margin: 20px auto;
 }
 
-/* Form styling */
 form {
     display: flex;
     flex-direction: column;
@@ -117,7 +109,6 @@ input[type="submit"]:hover {
     background-color: #218838;
 }
 
-/* Content styling */
 .content {
     background: #fff;
     border-radius: 8px;
@@ -136,7 +127,6 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
     .navbar .nav-links {
         flex-direction: column;
